@@ -12,7 +12,7 @@ export default function Home() {
       terms: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().max(20, "Name must be 20 characters or less."),
+      name: Yup.string().max(20, "Name must be 20 characters or less"),
     }),
     onSubmit: (values) => {
       console.log(values);
